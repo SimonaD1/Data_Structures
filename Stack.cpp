@@ -95,11 +95,11 @@ bool Stack<T>::isEmpty() const //proverqva dali steka e prazen
 template <typename T>
 void Stack<T>::copyReverse(const Stack& otherSt)
 {
-    Node<T>* node = otherSt.first;
+    Node<T>* node = otherSt.first; //pointer kon prviq element ot steka
     for(int i=0; i < otherSt.length(); i++)
     {
-        this->push(node->data);
-        node = node->next;
+        this->push(node->data); //dobavqs element
+        node = node->next; //samiq element go nasocvas kon sledvashtiq
     }
 }
 template <typename T>

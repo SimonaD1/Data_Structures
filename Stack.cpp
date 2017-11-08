@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 template<typename T>
-struct Node
+struct Node //konstruirame element koito ima data i pointer kon sledvashtiq element
 {
-    T data;
-    Node<T>* next;
+    T data; //danni koito ima elementa
+    Node<T>* next; //pointer 
     Node(const T& data,Node<T>* next = nullptr) //na nullptr ako v slucai nqma kade da sochi t.e nqma sledvasht element
     {
         this->data = data;
@@ -17,11 +17,11 @@ class Stack
 private:
     Node<T>* first;
     size_t size;
-    void copy(const Stack<T>& otherSt);
-    void copyReverse(const Stack<T>& otherSt);
+    void copy(const Stack<T>& otherSt); //1->2->3
+    void copyReverse(const Stack<T>& otherSt); //3->2->1
     void emptyStack();
     void inIt();
-    bool isEmpty() const;
+    bool isEmpty() const; //proverqva dali steka e prazen
 public:
     Stack();
     Stack(const Stack& otherSt);

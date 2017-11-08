@@ -29,7 +29,7 @@ public:
     size_t length() const;
     T top() const;
     void pop();
-    void push(const T& newElement);
+    void push(const T& newData);
     ~Stack();
 };
 template <typename T>
@@ -61,9 +61,9 @@ T Stack<T>::top() const //vrshta nai-gorniq element
     return this->first->data;
 }
 template <typename T>
-void Stack<T>::push(const T& newElement) //dobavq nov element
+void Stack<T>::push(const T& newData) //dobavq nov element
 {
-    Node<T>* add = new Node<T>(newElement,this->first); 
+    Node<T>* add = new Node<T>(newData,this->first); 
     if(add)
     {
         this->first = add;

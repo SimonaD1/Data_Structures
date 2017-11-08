@@ -18,7 +18,7 @@ private:
     Node<T>* first;
     size_t size;
     void copy(const Stack<T>& otherSt);
-    void copyReverse(const Stack<T>& St);
+    void copyReverse(const Stack<T>& otherSt);
     void emptyStack();
     void inIt();
     bool isEmpty() const;
@@ -83,12 +83,12 @@ void Stack<T>::pop() //premahva element
     }
 }
 template <typename T>
-size_t Stack<T>::length() const
+size_t Stack<T>::length() const //vrshta dolzinata na steka t.e broq na elementite v steka
 {
     return this->size;
 }
 template <typename T>
-bool Stack<T>::isEmpty() const
+bool Stack<T>::isEmpty() const //proverqva dali steka e prazen
 {
     return this->size == 0;
 }

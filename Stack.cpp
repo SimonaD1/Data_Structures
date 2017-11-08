@@ -63,7 +63,7 @@ T Stack<T>::top() const //vrshta nai-gorniq element
 template <typename T>
 void Stack<T>::push(const T& newElement) //dobavq nov element
 {
-    Node<T>* add = new Node<T>(newElement,this->first);
+    Node<T>* add = new Node<T>(newElement,this->first); 
     if(add)
     {
         this->first = add;

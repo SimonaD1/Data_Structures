@@ -76,7 +76,7 @@ void queue<T>::enqueue(const T& newData) ///add new element in queue
 	}
 }
 template <typename T>
-void queue<T>::dequeue() //remova element of queue
+void queue<T>::dequeue() //remove element of queue
 {
 	if (!this->isEmpty())
 	{
